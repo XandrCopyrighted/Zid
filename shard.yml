@@ -1,19 +1,18 @@
-name: gui
-version: 0.1.0
-
+name: zid
+version: 0.0.1
+description: example
 authors:
   - serge <serge.hulne@gmail.com>
-
-targets:
-  gui_1:
-    main: src/gui.cr
-
-crystal: 1.6.0
-
+  - Jaydon Nelson <xxdr@duck.com>
 license: MIT
+crystal: '>= 1.6.0'
 
 dependencies:
   kemal:
     github: kemalcr/kemal
   blueprint:
     github: stephannv/blueprint
+
+targets:
+  zid:
+    main: src/main.cr

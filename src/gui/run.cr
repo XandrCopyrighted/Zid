@@ -1,17 +1,12 @@
 require "./settings"
 
 {% if flag?(:linux) %}
-  
-  #======
-  # Linux
-  #======
-  
   require "process"
 
   def run_app(title : String, width : Int32, height : Int32)
-    puts "http://#{IP}:#{PORT}/#{ROOT}"  
+    puts "http://#{IP}:#{PORT}/#{ROOT}"
     sleep(1) # Wait a bit for the server to start
-    
+
     # Arguments array
     args = [
       "-p", "http://#{IP}:#{PORT}/#{ROOT}",
@@ -29,17 +24,12 @@ require "./settings"
 
 
 {% elsif flag?(:darwin) %}
-
-  #======
-  # Mac
-  #======
-
   require "process"
-  
+
   def run_app(title : String, width : Int32, height : Int32)
-    puts "http://#{IP}:#{PORT}/#{ROOT}"  
+    puts "http://#{IP}:#{PORT}/#{ROOT}"
     sleep(1) # Wait a bit for the server to start
-    
+
     # Arguments array
     args = [
       "-p", "http://#{IP}:#{PORT}/#{ROOT}",
@@ -57,13 +47,8 @@ require "./settings"
 
 
 {% elsif flag?(:win32) %}
-  
-  #========
-  # Windows
-  #========
-  
   #
-  # Not implemented yet.
+  # Not implemented yet, lmao
   #
 
 {% end %}
@@ -104,3 +89,6 @@ require "./settings"
 #   puts "Press Enter to close..."
 #   gets
 # end
+
+
+# Move this in like some wiki idk

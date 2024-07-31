@@ -1,15 +1,7 @@
 def picoCSS
   picoCSS = <<-CSS
 
-
   @charset "UTF-8";
-  /*!
-   * Pico.css v1.5.6 (https://picocss.com)
-   * Copyright 2019-2022 - Licensed under MIT
-   */
-  /**
-   * Theme: default
-   */
   :root {
     --font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu",
       "Cantarell", "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
@@ -56,7 +48,7 @@ def picoCSS
       --font-size: 20px;
     }
   }
-  
+
   @media (min-width: 576px) {
     body > header,
   body > main,
@@ -89,7 +81,7 @@ def picoCSS
       --block-spacing-vertical: calc(var(--spacing) * 4);
     }
   }
-  
+
   @media (min-width: 576px) {
     article {
       --block-spacing-horizontal: calc(var(--spacing) * 1.25);
@@ -110,7 +102,7 @@ def picoCSS
       --block-spacing-horizontal: calc(var(--spacing) * 2);
     }
   }
-  
+
   dialog > article {
     --block-spacing-vertical: calc(var(--spacing) * 2);
     --block-spacing-horizontal: var(--spacing);
@@ -127,18 +119,18 @@ def picoCSS
       --block-spacing-horizontal: calc(var(--spacing) * 1.5);
     }
   }
-  
+
   a {
     --text-decoration: none;
   }
   a.secondary, a.contrast {
     --text-decoration: underline;
   }
-  
+
   small {
     --font-size: 0.875em;
   }
-  
+
   h1,
   h2,
   h3,
@@ -147,52 +139,52 @@ def picoCSS
   h6 {
     --font-weight: 700;
   }
-  
+
   h1 {
     --font-size: 2rem;
     --typography-spacing-vertical: 3rem;
   }
-  
+
   h2 {
     --font-size: 1.75rem;
     --typography-spacing-vertical: 2.625rem;
   }
-  
+
   h3 {
     --font-size: 1.5rem;
     --typography-spacing-vertical: 2.25rem;
   }
-  
+
   h4 {
     --font-size: 1.25rem;
     --typography-spacing-vertical: 1.874rem;
   }
-  
+
   h5 {
     --font-size: 1.125rem;
     --typography-spacing-vertical: 1.6875rem;
   }
-  
+
   [type=checkbox],
   [type=radio] {
     --border-width: 2px;
   }
-  
+
   [type=checkbox][role=switch] {
     --border-width: 3px;
   }
-  
+
   thead th,
   thead td,
   tfoot th,
   tfoot td {
     --border-width: 3px;
   }
-  
+
   :not(thead, tfoot) > * > td {
     --font-size: 0.875em;
   }
-  
+
   pre,
   code,
   kbd,
@@ -201,11 +193,11 @@ def picoCSS
       "Noto Mono", "Oxygen Mono", "Liberation Mono", monospace,
       "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   }
-  
+
   kbd {
     --font-weight: bolder;
   }
-  
+
   [data-theme=light],
   :root:not([data-theme=dark]) {
     --background-color: #fff;
@@ -311,7 +303,7 @@ def picoCSS
     --icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(56, 142, 60)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
     color-scheme: light;
   }
-  
+
   @media only screen and (prefers-color-scheme: dark) {
     :root:not([data-theme=light]) {
       --background-color: #11191f;
@@ -524,14 +516,14 @@ def picoCSS
     --icon-valid: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='rgb(46, 125, 50)' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'%3E%3C/polyline%3E%3C/svg%3E");
     color-scheme: dark;
   }
-  
+
   progress,
   [type=checkbox],
   [type=radio],
   [type=range] {
     accent-color: var(--primary);
   }
-  
+
   /**
    * Document
    * Content-box & Responsive typography
@@ -542,13 +534,13 @@ def picoCSS
     box-sizing: border-box;
     background-repeat: no-repeat;
   }
-  
+
   ::before,
   ::after {
     text-decoration: inherit;
     vertical-align: inherit;
   }
-  
+
   :where(:root) {
     -webkit-tap-highlight-color: transparent;
     -webkit-text-size-adjust: 100%;
@@ -567,7 +559,7 @@ def picoCSS
     -o-tab-size: 4;
     tab-size: 4;
   }
-  
+
   /**
    * Sectioning
    * Container and responsive spacings for header, main, footer
@@ -575,7 +567,7 @@ def picoCSS
   main {
     display: block;
   }
-  
+
   body {
     width: 100%;
     margin: 0;
@@ -588,7 +580,7 @@ def picoCSS
     margin-left: auto;
     padding: var(--block-spacing-vertical) 0;
   }
-  
+
   /**
   * Container
   */
@@ -600,7 +592,7 @@ def picoCSS
     padding-right: var(--spacing);
     padding-left: var(--spacing);
   }
-  
+
   @media (min-width: 576px) {
     .container {
       max-width: 510px;
@@ -623,7 +615,7 @@ def picoCSS
       max-width: 1130px;
     }
   }
-  
+
   /**
    * Section
    * Responsive spacings for section
@@ -631,7 +623,7 @@ def picoCSS
   section {
     margin-bottom: var(--block-spacing-vertical);
   }
-  
+
   /**
   * Grid
   * Minimal grid system with auto-layout columns
@@ -651,7 +643,7 @@ def picoCSS
   .grid > * {
     min-width: 0;
   }
-  
+
   /**
    * Horizontal scroller (<figure>)
    */
@@ -665,7 +657,7 @@ def picoCSS
     padding: calc(var(--spacing) * 0.5) 0;
     color: var(--muted-color);
   }
-  
+
   /**
    * Typography
    */
@@ -673,7 +665,7 @@ def picoCSS
   strong {
     font-weight: bolder;
   }
-  
+
   sub,
   sup {
     position: relative;
@@ -681,15 +673,15 @@ def picoCSS
     line-height: 0;
     vertical-align: baseline;
   }
-  
+
   sub {
     bottom: -0.25em;
   }
-  
+
   sup {
     top: -0.5em;
   }
-  
+
   address,
   blockquote,
   dl,
@@ -707,7 +699,7 @@ def picoCSS
     font-weight: var(--font-weight);
     font-size: var(--font-size);
   }
-  
+
   a,
   [role=link] {
     --color: var(--primary);
@@ -754,7 +746,7 @@ def picoCSS
   [role=link].contrast:focus {
     --background-color: var(--contrast-focus);
   }
-  
+
   h1,
   h2,
   h3,
@@ -768,35 +760,35 @@ def picoCSS
     font-size: var(--font-size);
     font-family: var(--font-family);
   }
-  
+
   h1 {
     --color: var(--h1-color);
   }
-  
+
   h2 {
     --color: var(--h2-color);
   }
-  
+
   h3 {
     --color: var(--h3-color);
   }
-  
+
   h4 {
     --color: var(--h4-color);
   }
-  
+
   h5 {
     --color: var(--h5-color);
   }
-  
+
   h6 {
     --color: var(--h6-color);
   }
-  
+
   :where(address, blockquote, dl, figure, form, ol, p, pre, table, ul) ~ :is(h1, h2, h3, h4, h5, h6) {
     margin-top: var(--typography-spacing-vertical);
   }
-  
+
   hgroup,
   .headings {
     margin-bottom: var(--typography-spacing-vertical);
@@ -812,15 +804,15 @@ def picoCSS
     font-size: 1rem;
     font-family: unset;
   }
-  
+
   p {
     margin-bottom: var(--typography-spacing-vertical);
   }
-  
+
   small {
     font-size: var(--font-size);
   }
-  
+
   :where(dl, ol, ul) {
     padding-right: 0;
     padding-left: var(--spacing);
@@ -832,23 +824,23 @@ def picoCSS
   :where(dl, ol, ul) li {
     margin-bottom: calc(var(--typography-spacing-vertical) * 0.25);
   }
-  
+
   :where(dl, ol, ul) :is(dl, ol, ul) {
     margin: 0;
     margin-top: calc(var(--typography-spacing-vertical) * 0.25);
   }
-  
+
   ul li {
     list-style: square;
   }
-  
+
   mark {
     padding: 0.125rem 0.25rem;
     background-color: var(--mark-background-color);
     color: var(--mark-color);
     vertical-align: baseline;
   }
-  
+
   blockquote {
     display: block;
     margin: var(--typography-spacing-vertical) 0;
@@ -864,65 +856,65 @@ def picoCSS
     margin-top: calc(var(--typography-spacing-vertical) * 0.5);
     color: var(--blockquote-footer-color);
   }
-  
+
   abbr[title] {
     border-bottom: 1px dotted;
     text-decoration: none;
     cursor: help;
   }
-  
+
   ins {
     color: var(--ins-color);
     text-decoration: none;
   }
-  
+
   del {
     color: var(--del-color);
   }
-  
+
   ::-moz-selection {
     background-color: var(--primary-focus);
   }
-  
+
   ::selection {
     background-color: var(--primary-focus);
   }
-  
+
   /**
    * Embedded content
    */
   :where(audio, canvas, iframe, img, svg, video) {
     vertical-align: middle;
   }
-  
+
   audio,
   video {
     display: inline-block;
   }
-  
+
   audio:not([controls]) {
     display: none;
     height: 0;
   }
-  
+
   :where(iframe) {
     border-style: none;
   }
-  
+
   img {
     max-width: 100%;
     height: auto;
     border-style: none;
   }
-  
+
   :where(svg:not([fill])) {
     fill: currentColor;
   }
-  
+
   svg:not(:root) {
     overflow: hidden;
   }
-  
+
   /**
    * Button
    */
@@ -932,25 +924,25 @@ def picoCSS
     font-family: inherit;
     text-transform: none;
   }
-  
+
   button,
   [type=button],
   [type=reset],
   [type=submit] {
     -webkit-appearance: button;
   }
-  
+
   button {
     display: block;
     width: 100%;
     margin-bottom: var(--spacing);
   }
-  
+
   [role=button] {
     display: inline-block;
     text-decoration: none;
   }
-  
+
   button,
   input[type=submit],
   input[type=button],
@@ -992,7 +984,7 @@ def picoCSS
     --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
       0 0 0 var(--outline-width) var(--primary-focus);
   }
-  
+
   :is(button, input[type=submit], input[type=button], [role=button]).secondary,
   input[type=reset] {
     --background-color: var(--secondary);
@@ -1011,7 +1003,7 @@ def picoCSS
     --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
       0 0 0 var(--outline-width) var(--secondary-focus);
   }
-  
+
   :is(button, input[type=submit], input[type=button], [role=button]).contrast {
     --background-color: var(--contrast);
     --border-color: var(--contrast);
@@ -1026,7 +1018,7 @@ def picoCSS
     --box-shadow: var(--button-hover-box-shadow, 0 0 0 rgba(0, 0, 0, 0)),
       0 0 0 var(--outline-width) var(--contrast-focus);
   }
-  
+
   :is(button, input[type=submit], input[type=button], [role=button]).outline,
   input[type=reset].outline {
     --background-color: transparent;
@@ -1037,7 +1029,7 @@ def picoCSS
     --background-color: transparent;
     --color: var(--primary-hover);
   }
-  
+
   :is(button, input[type=submit], input[type=button], [role=button]).outline.secondary,
   input[type=reset].outline {
     --color: var(--secondary);
@@ -1046,21 +1038,21 @@ def picoCSS
   input[type=reset].outline:is([aria-current], :hover, :active, :focus) {
     --color: var(--secondary-hover);
   }
-  
+
   :is(button, input[type=submit], input[type=button], [role=button]).outline.contrast {
     --color: var(--contrast);
   }
   :is(button, input[type=submit], input[type=button], [role=button]).outline.contrast:is([aria-current], :hover, :active, :focus) {
     --color: var(--contrast-hover);
   }
-  
+
   :where(button, [type=submit], [type=button], [type=reset], [role=button])[disabled],
   :where(fieldset[disabled]) :is(button, [type=submit], [type=button], [type=reset], [role=button]),
   a[role=button]:not([href]) {
     opacity: 0.5;
     pointer-events: none;
   }
-  
+
   /**
    * Form elements
    */
@@ -1074,97 +1066,97 @@ def picoCSS
     font-family: inherit;
     letter-spacing: inherit;
   }
-  
+
   input {
     overflow: visible;
   }
-  
+
   select {
     text-transform: none;
   }
-  
+
   legend {
     max-width: 100%;
     padding: 0;
     color: inherit;
     white-space: normal;
   }
-  
+
   textarea {
     overflow: auto;
   }
-  
+
   [type=checkbox],
   [type=radio] {
     padding: 0;
   }
-  
+
   ::-webkit-inner-spin-button,
   ::-webkit-outer-spin-button {
     height: auto;
   }
-  
+
   [type=search] {
     -webkit-appearance: textfield;
     outline-offset: -2px;
   }
-  
+
   [type=search]::-webkit-search-decoration {
     -webkit-appearance: none;
   }
-  
+
   ::-webkit-file-upload-button {
     -webkit-appearance: button;
     font: inherit;
   }
-  
+
   ::-moz-focus-inner {
     padding: 0;
     border-style: none;
   }
-  
+
   :-moz-focusring {
     outline: none;
   }
-  
+
   :-moz-ui-invalid {
     box-shadow: none;
   }
-  
+
   ::-ms-expand {
     display: none;
   }
-  
+
   [type=file],
   [type=range] {
     padding: 0;
     border-width: 0;
   }
-  
+
   input:not([type=checkbox], [type=radio], [type=range]) {
     height: calc(1rem * var(--line-height) + var(--form-element-spacing-vertical) * 2 + var(--border-width) * 2);
   }
-  
+
   fieldset {
     margin: 0;
     margin-bottom: var(--spacing);
     padding: 0;
     border: 0;
   }
-  
+
   label,
   fieldset legend {
     display: block;
     margin-bottom: calc(var(--spacing) * 0.25);
     font-weight: var(--form-label-font-weight, var(--font-weight));
   }
-  
+
   input:not([type=checkbox], [type=radio]),
   select,
   textarea {
     width: 100%;
   }
-  
+
   input:not([type=checkbox], [type=radio], [type=range], [type=file]),
   select,
   textarea {
@@ -1173,7 +1165,7 @@ def picoCSS
     appearance: none;
     padding: var(--form-element-spacing-vertical) var(--form-element-spacing-horizontal);
   }
-  
+
   input,
   select,
   textarea {
@@ -1190,23 +1182,23 @@ def picoCSS
     font-weight: var(--font-weight);
     transition: background-color var(--transition), border-color var(--transition), color var(--transition), box-shadow var(--transition);
   }
-  
+
   input:not([type=submit], [type=button], [type=reset], [type=checkbox], [type=radio], [readonly]):is(:active, :focus),
   :where(select, textarea):is(:active, :focus) {
     --background-color: var(--form-element-active-background-color);
   }
-  
+
   input:not([type=submit], [type=button], [type=reset], [role=switch], [readonly]):is(:active, :focus),
   :where(select, textarea):is(:active, :focus) {
     --border-color: var(--form-element-active-border-color);
   }
-  
+
   input:not([type=submit], [type=button], [type=reset], [type=range], [type=file], [readonly]):focus,
   select:focus,
   textarea:focus {
     --box-shadow: 0 0 0 var(--outline-width) var(--form-element-focus-color);
   }
-  
+
   input:not([type=submit], [type=button], [type=reset])[disabled],
   select[disabled],
   textarea[disabled],
@@ -1216,7 +1208,7 @@ def picoCSS
     opacity: var(--form-element-disabled-opacity);
     pointer-events: none;
   }
-  
+
   :where(input, select, textarea):not([type=checkbox], [type=radio], [type=date], [type=datetime-local], [type=month], [type=time], [type=week])[aria-invalid] {
     padding-right: calc(var(--form-element-spacing-horizontal) + 1.5rem) !important;
     padding-left: var(--form-element-spacing-horizontal);
@@ -1248,11 +1240,11 @@ def picoCSS
     --border-color: var(--form-element-invalid-active-border-color) !important;
     --box-shadow: 0 0 0 var(--outline-width) var(--form-element-invalid-focus-color) !important;
   }
-  
+
   [dir=rtl] :where(input, select, textarea):not([type=checkbox], [type=radio]):is([aria-invalid], [aria-invalid=true], [aria-invalid=false]) {
     background-position: center left 0.75rem;
   }
-  
+
   input::placeholder,
   input::-webkit-input-placeholder,
   textarea::placeholder,
@@ -1261,13 +1253,13 @@ def picoCSS
     color: var(--form-element-placeholder-color);
     opacity: 1;
   }
-  
+
   input:not([type=checkbox], [type=radio]),
   select,
   textarea {
     margin-bottom: var(--spacing);
   }
-  
+
   select::-ms-expand {
     border: 0;
     background-color: transparent;
@@ -1284,11 +1276,11 @@ def picoCSS
     background-size: 1rem auto;
     background-repeat: no-repeat;
   }
-  
+
   [dir=rtl] select:not([multiple], [size]) {
     background-position: center left 0.75rem;
   }
-  
+
   :where(input, select, textarea) + small {
     display: block;
     width: 100%;
@@ -1296,11 +1288,11 @@ def picoCSS
     margin-bottom: var(--spacing);
     color: var(--muted-color);
   }
-  
+
   label > :where(input, select, textarea) {
     margin-top: calc(var(--spacing) * 0.25);
   }
-  
+
   /**
    * Form elements
    * Checkboxes & Radios
@@ -1346,7 +1338,7 @@ def picoCSS
     margin-bottom: 0;
     cursor: pointer;
   }
-  
+
   [type=checkbox]:indeterminate {
     --background-color: var(--primary);
     --border-color: var(--primary);
@@ -1355,7 +1347,7 @@ def picoCSS
     background-size: 0.75em auto;
     background-repeat: no-repeat;
   }
-  
+
   [type=radio] {
     border-radius: 50%;
   }
@@ -1364,7 +1356,7 @@ def picoCSS
     border-width: 0.35em;
     background-image: none;
   }
-  
+
   [type=checkbox][role=switch] {
     --background-color: var(--switch-background-color);
     --border-color: var(--switch-background-color);
@@ -1401,7 +1393,7 @@ def picoCSS
     -webkit-margin-start: calc(1.125em - var(--border-width));
     margin-inline-start: calc(1.125em - var(--border-width));
   }
-  
+
   [type=checkbox][aria-invalid=false],
   [type=checkbox]:checked[aria-invalid=false],
   [type=radio][aria-invalid=false],
@@ -1418,7 +1410,7 @@ def picoCSS
   [type=checkbox][role=switch]:checked[aria-invalid=true] {
     --border-color: var(--form-element-invalid-border-color);
   }
-  
+
   /**
    * Form elements
    * Alternatives input types (Not Checkboxes & Radios)
@@ -1437,7 +1429,7 @@ def picoCSS
     border: 0;
     border-radius: calc(var(--border-radius) * 0.5);
   }
-  
+
   input:not([type=checkbox], [type=radio], [type=range], [type=file]):is([type=date], [type=datetime-local], [type=month], [type=time], [type=week]) {
     --icon-position: 0.75rem;
     --icon-width: 1rem;
@@ -1450,7 +1442,7 @@ def picoCSS
   input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=time] {
     background-image: var(--icon-time);
   }
-  
+
   [type=date]::-webkit-calendar-picker-indicator,
   [type=datetime-local]::-webkit-calendar-picker-indicator,
   [type=month]::-webkit-calendar-picker-indicator,
@@ -1461,11 +1453,11 @@ def picoCSS
     margin-left: var(--icon-position);
     opacity: 0;
   }
-  
+
   [dir=rtl] :is([type=date], [type=datetime-local], [type=month], [type=time], [type=week]) {
     text-align: right;
   }
-  
+
   [type=file] {
     --color: var(--muted-color);
     padding: calc(var(--form-element-spacing-vertical) * 0.5) 0;
@@ -1557,7 +1549,7 @@ def picoCSS
     --background-color: var(--secondary-hover);
     --border-color: var(--secondary-hover);
   }
-  
+
   [type=range] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -1642,7 +1634,7 @@ def picoCSS
   [type=range]:active::-ms-thumb {
     transform: scale(1.25);
   }
-  
+
   input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
     -webkit-padding-start: calc(var(--form-element-spacing-horizontal) + 1.75rem);
     padding-inline-start: calc(var(--form-element-spacing-horizontal) + 1.75rem);
@@ -1663,19 +1655,19 @@ def picoCSS
   input:not([type=checkbox], [type=radio], [type=range], [type=file])[type=search][aria-invalid=true] {
     background-image: var(--icon-search), var(--icon-invalid);
   }
-  
+
   [type=search]::-webkit-search-cancel-button {
     -webkit-appearance: none;
     display: none;
   }
-  
+
   [dir=rtl] :where(input):not([type=checkbox], [type=radio], [type=range], [type=file])[type=search] {
     background-position: center right 1.125rem;
   }
   [dir=rtl] :where(input):not([type=checkbox], [type=radio], [type=range], [type=file])[type=search][aria-invalid] {
     background-position: center right 1.125rem, center left 0.75rem;
   }
-  
+
   /**
    * Table
    */
@@ -1685,7 +1677,7 @@ def picoCSS
     border-spacing: 0;
     text-indent: 0;
   }
-  
+
   th,
   td {
     padding: calc(var(--spacing) / 2) var(--spacing);
@@ -1696,17 +1688,17 @@ def picoCSS
     text-align: left;
     text-align: start;
   }
-  
+
   tfoot th,
   tfoot td {
     border-top: var(--border-width) solid var(--table-border-color);
     border-bottom: 0;
   }
-  
+
   table[role=grid] tbody tr:nth-child(odd) {
     background-color: var(--table-row-stripped-background-color);
   }
-  
+
   /**
    * Code
    */
@@ -1717,12 +1709,12 @@ def picoCSS
     font-size: 0.875em;
     font-family: var(--font-family);
   }
-  
+
   pre {
     -ms-overflow-style: scrollbar;
     overflow: auto;
   }
-  
+
   pre,
   code,
   kbd {
@@ -1732,13 +1724,13 @@ def picoCSS
     font-weight: var(--font-weight);
     line-height: initial;
   }
-  
+
   code,
   kbd {
     display: inline-block;
     padding: 0.375rem 0.5rem;
   }
-  
+
   pre {
     display: block;
     margin-bottom: var(--spacing);
@@ -1751,7 +1743,7 @@ def picoCSS
     font-size: 14px;
     line-height: var(--line-height);
   }
-  
+
   code b {
     color: var(--code-tag-color);
     font-weight: var(--font-weight);
@@ -1768,13 +1760,13 @@ def picoCSS
     color: var(--code-comment-color);
     font-style: normal;
   }
-  
+
   kbd {
     background-color: var(--code-kbd-background-color);
     color: var(--code-kbd-color);
     vertical-align: baseline;
   }
-  
+
   /**
    * Miscs
    */
@@ -1784,16 +1776,16 @@ def picoCSS
     border-top: 1px solid var(--muted-border-color);
     color: inherit;
   }
-  
+
   [hidden],
   template {
     display: none !important;
   }
-  
+
   canvas {
     display: inline-block;
   }
-  
+
   /**
    * Accordion (<details>)
    */
@@ -1862,7 +1854,7 @@ def picoCSS
   details[open] > summary::after {
     transform: rotate(0);
   }
-  
+
   [dir=rtl] details summary {
     text-align: right;
   }
@@ -1870,7 +1862,7 @@ def picoCSS
     float: left;
     background-position: left center;
   }
-  
+
   /**
    * Card (<article>)
    */
@@ -1902,14 +1894,14 @@ def picoCSS
     border-bottom-right-radius: var(--border-radius);
     border-bottom-left-radius: var(--border-radius);
   }
-  
+
   /**
    * Modal (<dialog>)
    */
   :root {
     --scrollbar-width: 0px;
   }
-  
+
   dialog {
     display: flex;
     z-index: 999;
@@ -1986,7 +1978,7 @@ def picoCSS
   dialog:not([open]), dialog[open=false] {
     display: none;
   }
-  
+
   .modal-is-open {
     padding-right: var(--scrollbar-width, 0px);
     overflow: hidden;
@@ -1995,7 +1987,7 @@ def picoCSS
   .modal-is-open dialog {
     pointer-events: auto;
   }
-  
+
   :where(.modal-is-opening, .modal-is-closing) dialog,
   :where(.modal-is-opening, .modal-is-closing) dialog > article {
     animation-duration: 0.2s;
@@ -2010,13 +2002,13 @@ def picoCSS
     animation-delay: 0.2s;
     animation-name: modal;
   }
-  
+
   .modal-is-closing dialog,
   .modal-is-closing dialog > article {
     animation-delay: 0s;
     animation-direction: reverse;
   }
-  
+
   @keyframes modal-overlay {
     from {
       -webkit-backdrop-filter: none;
@@ -2037,12 +2029,12 @@ def picoCSS
     float: left;
     content: "​";
   }
-  
+
   nav,
   nav ul {
     display: flex;
   }
-  
+
   nav {
     justify-content: space-between;
   }
@@ -2107,7 +2099,7 @@ def picoCSS
     margin-left: inherit;
     padding: var(--nav-link-spacing-vertical) var(--nav-link-spacing-horizontal);
   }
-  
+
   aside nav,
   aside ol,
   aside ul,
@@ -2123,11 +2115,11 @@ def picoCSS
   aside li [role=button] {
     margin: inherit;
   }
-  
+
   [dir=rtl] nav[aria-label=breadcrumb] ul li:not(:last-child) ::after {
     content: "\\";
   }
-  
+
   /**
    * Progress
    */
@@ -2135,7 +2127,7 @@ def picoCSS
     display: inline-block;
     vertical-align: baseline;
   }
-  
+
   progress {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -2172,13 +2164,13 @@ def picoCSS
       background-color: transparent;
     }
   }
-  
+
   @media (prefers-reduced-motion: no-preference) {
     [dir=rtl] progress:indeterminate {
       animation-direction: reverse;
     }
   }
-  
+
   @keyframes progress-indeterminate {
     0% {
       background-position: 200% 0;
@@ -2194,7 +2186,7 @@ def picoCSS
   li[role=list] {
     position: relative;
   }
-  
+
   details[role=list] summary + ul,
   li[role=list] > ul {
     display: flex;
@@ -2244,7 +2236,7 @@ def picoCSS
   li[role=list] > ul li a:hover {
     background-color: var(--dropdown-hover-background-color);
   }
-  
+
   details[role=list] summary::after,
   li[role=list] > a::after {
     display: block;
@@ -2259,7 +2251,7 @@ def picoCSS
     background-repeat: no-repeat;
     content: "";
   }
-  
+
   details[role=list] {
     padding: 0;
     border-bottom: none;
@@ -2301,13 +2293,13 @@ def picoCSS
     content: "";
     cursor: default;
   }
-  
+
   nav details[role=list] summary,
   nav li[role=list] a {
     display: flex;
     direction: ltr;
   }
-  
+
   nav details[role=list] summary + ul,
   nav li[role=list] > ul {
     min-width: -moz-fit-content;
@@ -2318,7 +2310,7 @@ def picoCSS
   nav li[role=list] > ul li a {
     border-radius: 0;
   }
-  
+
   nav details[role=list] summary,
   nav details[role=list] summary:not([role]) {
     height: auto;
@@ -2341,7 +2333,7 @@ def picoCSS
     -webkit-margin-start: calc(var(--nav-link-spacing-horizontal) * -1);
     margin-inline-start: calc(var(--nav-link-spacing-horizontal) * -1);
   }
-  
+
   li[role=list]:hover > ul,
   li[role=list] a:active ~ ul,
   li[role=list] a:focus ~ ul {
@@ -2356,14 +2348,14 @@ def picoCSS
   li[role=list] > a::after {
     background-image: var(--icon-chevron);
   }
-  
+
   /**
    * Loading ([aria-busy=true])
    */
   [aria-busy=true] {
     cursor: progress;
   }
-  
+
   [aria-busy=true]:not(input, select, textarea)::before {
     display: inline-block;
     width: 1em;
@@ -2388,7 +2380,7 @@ def picoCSS
   [aria-busy=true]:not(input, select, textarea):empty {
     text-align: center;
   }
-  
+
   button[aria-busy=true],
   input[type=submit][aria-busy=true],
   input[type=button][aria-busy=true],
@@ -2396,7 +2388,7 @@ def picoCSS
   a[aria-busy=true] {
     pointer-events: none;
   }
-  
+
   @keyframes spinner {
     to {
       transform: rotate(360deg);
@@ -2605,28 +2597,28 @@ def picoCSS
       opacity: 1;
     }
   }
-  
+
   /**
    * Accessibility & User interaction
    */
   [aria-controls] {
     cursor: pointer;
   }
-  
+
   [aria-disabled=true],
   [disabled] {
     cursor: not-allowed;
   }
-  
+
   [aria-hidden=false][hidden] {
     display: initial;
   }
-  
+
   [aria-hidden=false][hidden]:not(:focus) {
     clip: rect(0, 0, 0, 0);
     position: absolute;
   }
-  
+
   a,
   area,
   button,
@@ -2638,11 +2630,11 @@ def picoCSS
   [tabindex] {
     -ms-touch-action: manipulation;
   }
-  
+
   [dir=rtl] {
     direction: rtl;
   }
-  
+
   /**
   * Reduce Motion Features
   */
@@ -2664,7 +2656,7 @@ def picoCSS
     padding: 10px;
     background-color: #DCFAFF;
   }
-  
+
   /*# sourceMappingURL=pico.css.map */
 
 
@@ -2690,7 +2682,7 @@ def picoCSS
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-  
+
     /* Position the tooltip text - see examples below! */
     position: absolute;
     z-index: 1;
@@ -2700,7 +2692,7 @@ def picoCSS
   .tooltip .tooltiptext {
     width: 120px;
     bottom: 100%;
-    left: 50%; 
+    left: 50%;
     margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
   }
 
