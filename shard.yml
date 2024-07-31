@@ -14,5 +14,11 @@ dependencies:
     github: stephannv/blueprint
 
 targets:
-  zid:
+  core:
     main: src/main.cr
+  ex1:
+    main: examples/ex1/main.cr
+  ex2:
+    main: examples/ex2/main.cr
+  ex3:
+    main: examples/ex3/main.cr
