@@ -5,20 +5,14 @@ authors:
   - serge <serge.hulne@gmail.com>
   - Jaydon Nelson <xxdr@duck.com>
 license: MIT
-crystal: '>= 1.6.0'
+crystal: '>= 1.13.1'
 
 dependencies:
-  kemal:
-    github: kemalcr/kemal
   blueprint:
     github: stephannv/blueprint
+  webview:
+    github: naqvis/webview
 
 targets:
   core:
     main: src/main.cr
-  ex1:
-    main: examples/ex1/main.cr
-  ex2:
-    main: examples/ex2/main.cr
-  ex3:
-    main: examples/ex3/main.cr
