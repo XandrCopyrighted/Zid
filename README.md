@@ -1,38 +1,50 @@
 # Zid
-## GUI lib for Crystal-lang allowing for developing simple desktop apps.
 
-- Expressive (JSX-like).
-- Concise (it's like writing HTML).
-- Modular (A custom visual widget can include other custom widgets)
-- Stylable using regular CSS.
-- Easy layout coding.
-- Easy state management of the app.
-- Ajax support.
+## A GUI Library for Crystal, Build Simple Desktop Apps with Ease.
 
-### Built on
+Zid is a ~~versatile~~ GUI library designed for Crystal, simplifying the development of desktop applications. With it's intuitive approach, Zid aims to make app development straightforward and enjoyable.
+
+### Key Features
+
+- **Expressive Syntax**: JSX-like syntax for easy-to-read code.
+<!-- - **Concise Design**: Write code as simply as HTML. -->
+<!-- - **Modular Architecture**: Custom widgets can include other widgets for flexible UI design. -->
+- **Stylable with CSS**: Use regular CSS for styling your applications.
+- **Effortless Layout Coding**: Simplifies layout management.
+- **Streamlined State Management**: Easy handling of app states.
+<!-- - **AJAX Support**: Incorporate asynchronous requests seamlessly. -->
+
+### Built On
 
 - [Blueprint](https://github.com/stephannv/blueprint)
-- [Webview for Crystal](https://github.com/naqvis/webview)
-- [Pico CSS](https://picocss.coma)
+- [Crystal Webview](https://github.com/naqvis/webview)
+- [Pico CSS](https://picocss.com)
 - [HTMX](https://github.com/bigskysoftware/htmx)
-- [Crystal](https://crystal-lang.org)
+and of course, [Crystal](https://crystal-lang.org)
 
-### Dependencies on Linux
-- [webkit2gtk](https://archlinux.org/packages/extra/x86_64/webkit2gtk)
+### Dependencies
+
+| Operating System | Dependencies |
+| ---------------- | ------------ |
+| Linux            | [WebKitGTK][https://webkitgtk.org/]|
+| macOS            | [WebKit][https://webkit.org/] |
+| Windows          | [WebView2][https://developer.microsoft.com/en-us/microsoft-edge/webview2/]  | <!-- bro wtf is this link? -->
 
 ### Usage
-The aim is to provide a portable GUI library which will allows developers to code desktop apps in Crystal.
 
-- One goal is to make it as easy to use as Tkinter for Python.
-- Another goal is portability across platforms (Linux, Mac, Windows)
-- Another goal is to make it easy to distribute : The only dependency is Webview for Crystal. The app is simply one (binary executable) file.
-- The library uses Crystal, HTML, CSS and Webmin, internally but developers using the library only need to master Crystal (no HTML, CSS, JS knowledge required).
-- The author expects to develop a fairly complete set of widgets, to match the most commonly used HTML tags, once the initial tests are conclusive.
+Zid aims to offer a portable and user-friendly GUI library for developing desktop applications in Crystal:
 
-### Layouts / Styling / Customisation
-To experiment with layouts, graphical appearance, the CSS which is used is pico.css (provided in the module: pico.cr), therefore most of the features of pico.css are available in the current version of the framework.
+- **Ease of Use**: Designed to be as straightforward as Tkinter for Python.
+- **Cross-Platform**: Supports Linux, Mac, and Windows.
+- **Simple Distribution**: The app is a single binary executable with only one external dependency, that being the webview.
+- **Minimal Learning Curve**: Developers need only knowledge of Crystal; no need to master HTML, CSS, or ~~JavaScript~~.
+- **Comprehensive Widgets**: The library will feature a broad set of widgets to cover commonly used HTML tags, following initial successful tests.
+
+### Layouts, Styling, and Customization
+
+Experiment with layouts and design using Pico CSS (included in the module [pico.cr](https://github.com/XandrCopyrighted/Zid/blob/main/src/gui/pico.cr)). Most features of Pico CSS are available in Zid for flexible styling and customization.
 
 ## Contributors
 
-- [Serge Hulne](https://github.com/serge-hulne) - Creator
-- [XDR](https://github.com/XandrCopyrighted)
+- [Serge Hulne](https://github.com/serge-hulne) - Original Creator
+- [XDR](https://github.com/XandrCopyrighted) - Fork Creator and Maintainer
