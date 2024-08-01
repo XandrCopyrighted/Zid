@@ -26,9 +26,9 @@ and of course, [Crystal](https://crystal-lang.org)
 
 | Operating System | Dependencies |
 | ---------------- | ------------ |
-| Linux            | [WebKitGTK][https://webkitgtk.org/]|
-| macOS            | [WebKit][https://webkit.org/] |
-| Windows          | [WebView2][https://developer.microsoft.com/en-us/microsoft-edge/webview2/]  | <!-- bro wtf is this link? -->
+| Linux            | [WebKitGTK](https://webkitgtk.org/)|
+| macOS            | [WebKit](https://webkit.org/) |
+| Windows          | [WebView2](https://developer.microsoft.com/en-us/microsoft-edge/webview2/)  | <!-- bro wtf is this link? -->
 
 ### Usage
 
