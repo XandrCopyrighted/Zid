@@ -1,0 +1,15 @@
+LocalCSS = <<-CSS
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6
+}
+
+h1, h2, h3 {
+  color: pink
+}
+
+.container {
+    text-align: center
+}
+CSS

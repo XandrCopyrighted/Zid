@@ -1,6 +1,6 @@
 name: zid
-version: 0.0.1
-description: example
+version: 0.0.2
+description: A GUI Library for Crystal, Build Simple Desktop Apps with Ease.
 authors:
   - serge <serge.hulne@gmail.com>
   - Jaydon Nelson <xxdr@duck.com>
@@ -16,3 +16,5 @@ dependencies:
 targets:
   core:
     main: src/main.cr
+  ex1:
+    main: example/hello_world/main.cr
