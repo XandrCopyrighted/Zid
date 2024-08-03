@@ -18,7 +18,6 @@ Zid is a ~~versatile~~ GUI library designed for Crystal, simplifying the develop
 
 - [Blueprint](https://github.com/stephannv/blueprint)
 - [Crystal Webview](https://github.com/naqvis/webview)
-- [Pico CSS](https://picocss.com)
 - [HTMX](https://github.com/bigskysoftware/htmx)
 and of course, [Crystal](https://crystal-lang.org)
 
@@ -39,10 +38,6 @@ Zid aims to offer a portable and user-friendly GUI library for developing deskto
 - **Simple Distribution**: The app is a single binary executable with only one external dependency, that being the webview.
 - **Minimal Learning Curve**: Developers need only knowledge of Crystal; no need to master HTML, CSS, or ~~JavaScript~~.
 - **Comprehensive Widgets**: The library will feature a broad set of widgets to cover commonly used HTML tags, following initial successful tests.
-
-### Layouts, Styling, and Customization
-
-Experiment with layouts and design using Pico CSS (included in the module [pico.cr](https://github.com/XandrCopyrighted/Zid/blob/main/src/gui/pico.cr)). Most features of Pico CSS are available in Zid for flexible styling and customization.
 
 ## Contributors
 
