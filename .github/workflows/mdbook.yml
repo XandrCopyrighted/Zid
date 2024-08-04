@@ -3,6 +3,8 @@ name: Zid Book
 on:
   push:
     branches: [ "main" ]
+    paths:
+      - 'book/**'
 
 env:
   CARGO_TERM_COLOR: always
