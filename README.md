@@ -12,7 +12,7 @@ Zid is a ~~versatile~~ GUI library designed for Crystal, simplifying the develop
 - **Stylable with CSS**: Use regular CSS for styling your applications.
 - **Effortless Layout Coding**: Simplifies layout management.
 - **Streamlined State Management**: Easy handling of app states.
-<!-- - **AJAX Support**: Incorporate asynchronous requests seamlessly. -->
+- **AJAX Support**: Incorporate asynchronous requests seamlessly.
 
 ### Built On
 
