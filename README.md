@@ -7,8 +7,6 @@ Zid is a ~~versatile~~ GUI library designed for Crystal, simplifying the develop
 ### Key Features
 
 - **Expressive Syntax**: JSX-like syntax for easy-to-read code.
-<!-- - **Concise Design**: Write code as simply as HTML. -->
-<!-- - **Modular Architecture**: Custom widgets can include other widgets for flexible UI design. -->
 - **Stylable with CSS**: Use regular CSS for styling your applications.
 - **Effortless Layout Coding**: Simplifies layout management.
 - **Streamlined State Management**: Easy handling of app states.
