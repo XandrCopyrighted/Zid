@@ -1,0 +1,6 @@
+[book]
+authors = ["Jaydon 'XDR' Nelson <xxdr@duck.com>"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Zid Documentation"
