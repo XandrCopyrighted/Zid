@@ -1,0 +1,39 @@
+name: Zid Book
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+permissions:
+  id-token: write
+  pages: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+    - name: Install Rust
+      uses: actions-rs/toolchain@v1
+      with:
+        profile: minimal
+        toolchain: nightly
+        override: true
+    - name: Install mdBook CLI
+      run: cargo install mdbook
+    - name: Build mdBook
+      run: |
+        cd book/
+        mdbook build
+    - name: Setup Pages
+      uses: actions/configure-pages@v5
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: 'book/book/'
+    - name: Deploy
+      uses: actions/deploy-pages@v4
