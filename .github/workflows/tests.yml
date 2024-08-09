@@ -1,0 +1,26 @@
+name: Zid Tests
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: crystal-lang/install-crystal@v1
+      with:
+        crystal: latest
+        shards: latest
+        annotate: true
+    - name: Update system
+      run: sudo apt update -y
+    - name: Install dependencies
+      run: sudo apt install libwebkit2gtk-4.1-dev -y
+    - name: Build Zid
+      run: shards install
+    - name: Run tests
+      run: crystal spec
